@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+</head>
+<body>
+    <h1>Expense Tracker</h1>
+        
+        <form id="expenseForm">
+             <label for="name">Expense Name:</label><br>
+      <input type="text" id="name" name="name"><br><br>
+
+      <label for="amount">Amount:</label><br>
+      <input type="text" id="amount" name="amount"><br><br>
+
+            <button type="submit">Add Expense</button><br><br>
+            <span id="amountError" style="color: red;"></span>
+        </form>
+        
+        <table id="expenseTable">
+            
+                <tr>
+                    <table border="1">
+
+                    <th>Total income</th>
+                    <th>Total Expenses</th>
+                    <th>Balance</th>
+                </tr> 
+
+                <tr>
+                    <td>5,000.00</td>
+                    <td>$2,250.00</td>
+                    <td>$1,749.00</td>
+                </tr>
+
+                <tr>
+                    <td>$7,000.00</td>
+                    <td>$4,000.00</td>
+                    <td>$3,000.00</td>
+                </tr>
+
+        </table>
+        
+        <div id="totalAmount">Total: $0.00</div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
